@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARKS CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="box">
+                <form onsubmit="calculateMarks(event)" class="calculate-form" id="calculateForm">
+                    <input type="number" min="0" max="100" name="MATHS" placeholder="MATHS" required>
+                    <input type="number" min="0" max="100" name="ENGLISH" placeholder="ENGLISH" required>
+                    <input type="number" min="0" max="100" name="HINDI" placeholder="HINDI" required>
+                    <input type="number" min="0" max="100" name="SCIENCE" placeholder="SCIENCE" required>
+                    <button type="submit" class="primary-btn">CALCULATE</button>
+                </form>
+                <p id="result" class="result"></p>
+            </div>
+            <div class="content">
+                <h2>CALCULATE YOUR</h2>
+                <h1>PECENTAGE</h1>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
